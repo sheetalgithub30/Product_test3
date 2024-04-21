@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+body{
+    background-color: rgb(248, 240, 168);
+}
+#container{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-top: 1.5rem;
+}
+
+.product{
+   width: 35%;
+   height: 35rem;
+   background-color: whitesmoke;
+   border: 3px solid grey;
+   padding: 0rem 2rem;
+   border-radius: 10px;
+
+}
+.product h2 , .cart h2{
+    text-align: center;
+    margin: 1rem 0;
+}
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(189, 210, 119);
+    border: 2px solid grey;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.btn{
+    background-color: rgb(119, 119, 241);
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+.product-list .btn span {
+   margin: 0px 2px;
+   padding: 0px 1px;
+}
+.minus , .plus{
+    cursor: pointer;
+}
+.cart{
+    width: 25%;
+    height: 35rem;
+    background-color: whitesmoke;
+    border: 3px solid grey;
+    border-radius: 10px;
+    position: relative;
+
+}
+.cart-container{
+    padding: 0px 2.5rem;
+}
+.cart-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(189, 210, 119);
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.quantity{
+    position: relative;
+}
+.quantity span{
+    margin-right: 0.5rem;
+}
+
+.total{
+  position: absolute;
+  padding: 1rem;
+  background-color: rgb(189, 210, 119);
+  border: 2px solid grey;
+  bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 85%;
+  left: 8%;
+  
+}
+.info{
+    position: relative;
+    top: 20%;
+    left: 12%;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+}
